@@ -18,3 +18,18 @@ Result
 Validation
     Script successful - 3 computers now have FQDN and are displayed on 3 lines, in order. 
     Domain names are established for these 3 computers - does not mean they are reachable - DNS was not queried in this instance. 
+
+
+Challenge 03: Inspect local services.Inspect local services. Create an array w/ eventlog, w32time, and spooler. For each name, use get-service -name and save the returned objects in a variable. Display the service name and status on one line.
+Result
+    Service: eventlog, Status: Running
+    Service: w32time, Status: Running
+    Service: spooler, Status: Running
+Validation
+    3 lines with service names and statuses. 
+    Some services may be running or stopped depending on if they are currently in use by the computer. 
+
+
+    Challenge 04: Count local services. Store all local services returned by get-service. Set a counter to zero before the loop, then display each service name and incrememnt the counter inside of foreach. After loop, print the total.
+    Result
+    Validation
