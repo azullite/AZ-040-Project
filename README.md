@@ -30,6 +30,11 @@ Validation
     Some services may be running or stopped depending on if they are currently in use by the computer. 
 
 
-    Challenge 04: Count local services. Store all local services returned by get-service. Set a counter to zero before the loop, then display each service name and incrememnt the counter inside of foreach. After loop, print the total.
-    Result
-    Validation
+Challenge 04: Count local services. Store all local services returned by get-service. Set a counter to zero before the loop, then display each service name and increment the counter inside of foreach. After loop, print the total.
+Result
+    All local services listed in the format Service: $($service.Name)
+    Total services: 256
+
+Validation
+  One service is listed per line, and a total service count of the array is at the end of the loop. 
+  If the counter is reset inside the loop, the count will continue to reset and will not count up. 
