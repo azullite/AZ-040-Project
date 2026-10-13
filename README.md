@@ -38,3 +38,39 @@ Result
 Validation
   One service is listed per line, and a total service count of the array is at the end of the loop. 
   If the counter is reset inside the loop, the count will continue to reset and will not count up. 
+
+
+Challenge 05: Read the domain computer inventory. Import AD module, create the 3 name computer array. For each name, call get-adcomputer with -identity, -server lon-dc1.adatum.com and -properties operatingsystem.
+Display name, dnshostname, operating system from each returned object.
+Result
+    3 lab computer accounts were queried for info - name, dnshostname, and OS. Info was displayed correctly and in order.
+Validation
+    3 AD computer records populate.
+    These results come from the active directory database - Get-ADComputer is an AD query.
+
+
+Challenge 06: Challenge 6: Flag local services for review. Query eventlog, w32time, and spooler with a foreach loop.
+If status is running, print OK with the service name. Otherwise print review with the name and current status.
+Count the services marked review and display the count after the loop.
+ Result
+ Validation
+
+
+Challenge 07:
+Result
+Validation
+
+
+Challenge 08:
+Result
+Validation
+
+
+Challenge 09:
+Result
+Validation
+
+
+Challenge 10:
+Result
+Validation
