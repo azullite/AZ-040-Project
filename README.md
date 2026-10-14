@@ -98,11 +98,21 @@ Validation
 
 
 
-Challenge 08:
+Challenge 08: Test lab network responses. Build the same 3 fully qualified computer names inside foreach.
+Use test-connection with -count 1 -quiet -erroraction silentlycontinue. Use if and else to display ICMP reply or No ICMP
+reply for each name. Count replies.
 
 Result
+    ICMP reply from lon-cl1.adatum.com
+    ICMP reply from lon-dc1.adatum.com
+    ICMP reply from lon-svr1.adatum.com
+    Total ICMP replies: 3
 
 Validation
+    Three results from each computer - either positive ICMP reply or no ICMP reply.
+    A counter of total ICMP replies.
+    An ICMP reply (ping) indicates that the target host is available on the network - it does not verify that PS remoting
+    is functioning. PS remoting uses WinRM/WS-Management - these would need to be tested to verify PS remoting ability.
 
 
 
