@@ -119,8 +119,11 @@ Validation
 Challenge 09:
 
 Result
+    Imported report row count: 3
 
 Validation
+    Challenge09.csv contains 3 computer rows with ComputerName, DNSHostName, OperatingSystem, and AccountState columns.
+    The row count is verified by importing the exported CSV.
 
 
 
