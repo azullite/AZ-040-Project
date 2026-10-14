@@ -43,7 +43,9 @@ Validation
 Challenge 05: Read the domain computer inventory. Import AD module, create the 3 name computer array. For each name, call get-adcomputer with -identity, -server lon-dc1.adatum.com and -properties operatingsystem.
 Display name, dnshostname, operating system from each returned object.
 Result
-    3 lab computer accounts were queried for info - name, dnshostname, and OS. Info was displayed correctly and in order.
+    LON-DC1 | LON-DC1.Adatum.com | Windows Server 2019 Datacenter Evaluation
+    LON-SVR1 | LON-SVR1.Adatum.com | Windows Server 2019 Datacenter Evaluation
+    LON-CL1 | LON-CL1.Adatum.com | Windows 10 Enterprise
 Validation
     3 AD computer records populate.
     These results come from the active directory database - Get-ADComputer is an AD query.
@@ -53,7 +55,13 @@ Challenge 06: Challenge 6: Flag local services for review. Query eventlog, w32ti
 If status is running, print OK with the service name. Otherwise print review with the name and current status.
 Count the services marked review and display the count after the loop.
  Result
+    OK: eventlog
+    OK: w32time
+    OK: spooler
+    Total services marked for review: 0 
  Validation
+    3 services returned, with OK or REVIEW status. Correct count of services marked for review at the end.
+    Some services may be stopped because they are not in use. Some may be stopped because they were intentionally stopped or failed to start.
 
 
 Challenge 07:

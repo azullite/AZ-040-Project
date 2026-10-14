@@ -9,3 +9,12 @@ foreach ($computer in $computers) {
     Write-Output "DNS Hostname: $($adComputer.DNSHostName)"
     Write-Output "Operating System: $($adComputer.OperatingSystem)"
 }
+
+
+OR
+
+
+$computers = (get-adcomputer -filter * -properties operatingSystem)
+foreach ($computer in $computers) {
+    write-output "$($computer.name) | $($computer.dnshostname) | $($computer.operatingsystem)"
+}
